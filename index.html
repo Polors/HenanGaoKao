@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>河南2026高考志愿填报方案 | 419分 物理方向</title>
+<style>
+:root {
+  --primary: #2563eb;
+  --primary-light: #dbeafe;
+  --success: #16a34a;
+  --success-light: #dcfce7;
+  --warning: #ea580c;
+  --warning-light: #fed7aa;
+  --danger: #dc2626;
+  --danger-light: #fee2e2;
+  --info: #0891b2;
+  --info-light: #cffafe;
+  --bg: #f8fafc;
+  --card-bg: #ffffff;
+  --border: #e2e8f0;
+  --text: #1e293b;
+  --text-light: #64748b;
+  --shadow: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+  --radius: 12px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+/* Hero Header */
+.hero {
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #3b82f6 100%);
+  color: white;
+  padding: 40px 20px 30px;
+  text-align: center;
+}
+.hero h1 { font-size: 28px; margin-bottom: 8px; font-weight: 700; }
+.hero .subtitle { font-size: 14px; opacity: 0.9; }
+.hero .score-badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.2);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 50px;
+  padding: 6px 20px;
+  margin-top: 12px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Container */
+.container { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+
+/* TOC */
+.toc {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 20px 24px;
+  margin: -20px auto 24px;
+  max-width: 928px;
+  position: relative;
+  z-index: 10;
+}
+.toc h3 { font-size: 14px; color: var(--text-light); margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ul { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; }
+.toc li a {
+  display: inline-block;
+  padding: 6px 14px;
+  background: var(--primary-light);
+  color: var(--primary);
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+.toc li a:hover { background: var(--primary); color: white; }
+
+/* Section */
+section {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 28px 28px;
+  margin-bottom: 24px;
+}
+section h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text);
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--border);
+  margin-bottom: 20px;
+}
+section h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary);
+  margin: 24px 0 12px;
+}
+section h4 { font-size: 15px; font-weight: 600; margin: 16px 0 8px; }
+section p { margin-bottom: 12px; }
+section ul, section ol { margin: 8px 0 16px 24px; }
+section li { margin-bottom: 6px; }
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  font-size: 13px;
+  overflow-x: auto;
+  display: block;
+}
+th {
+  background: #f1f5f9;
+  font-weight: 600;
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 2px solid var(--border);
+  white-space: nowrap;
+}
+td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+tr:hover td { background: #f8fafc; }
+
+/* Risk badges */
+.risk-chong { background: var(--warning-light); color: var(--warning); padding: 2px 10px; border-radius: 12px; font-weight: 600; font-size: 12px; white-space: nowrap; }
+.risk-wen { background: var(--success-light); color: var(--success); padding: 2px 10px; border-radius: 12px; font-weight: 600; font-size: 12px; white-space: nowrap; }
+.risk-bao { background: var(--info-light); color: var(--info); padding: 2px 10px; border-radius: 12px; font-weight: 600; font-size: 12px; white-space: nowrap; }
+.risk-chongbao { background: #fef3c7; color: #92400e; padding: 2px 10px; border-radius: 12px; font-weight: 600; font-size: 12px; white-space: nowrap; }
+
+/* Volunteer card */
+.volunteer {
+  border-left: 4px solid var(--border);
+  padding: 16px 20px;
+  margin: 16px 0;
+  background: #f8fafc;
+  border-radius: 0 8px 8px 0;
+  transition: border-color 0.2s;
+}
+.volunteer:hover { border-left-color: var(--primary); }
+.volunteer.risk-chong-card { border-left-color: var(--warning); }
+.volunteer.risk-wen-card { border-left-color: var(--success); }
+.volunteer.risk-bao-card { border-left-color: var(--info); }
+.volunteer h4 { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.volunteer .detail { margin: 8px 0; font-size: 14px; }
+.volunteer .detail strong { color: var(--text); }
+.volunteer .detail span { color: var(--text-light); }
+
+/* Callout */
+.callout {
+  background: var(--primary-light);
+  border-left: 4px solid var(--primary);
+  padding: 16px 20px;
+  border-radius: 0 8px 8px 0;
+  margin: 16px 0;
+}
+.callout.warning { background: var(--warning-light); border-left-color: var(--warning); }
+.callout.danger { background: var(--danger-light); border-left-color: var(--danger); }
+.callout.success { background: var(--success-light); border-left-color: var(--success); }
+
+/* Check items */
+.check-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+}
+.check-item:last-child { border-bottom: none; }
+.check-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.check-pass { background: var(--success-light); color: var(--success); }
+.check-risk { background: var(--warning-light); color: var(--warning); }
+.check-wait { background: #e0e7ff; color: #4338ca; }
+.check-content h4 { margin: 0 0 4px; font-size: 14px; }
+.check-content p { margin: 0; font-size: 13px; color: var(--text-light); }
+
+/* Final recommendation */
+.final-rec {
+  background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+  border: 2px solid var(--success);
+  border-radius: var(--radius);
+  padding: 24px;
+  margin: 16px 0;
+}
+.final-rec h3 { color: var(--success); margin-top: 0; }
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 32px 20px;
+  color: var(--text-light);
+  font-size: 13px;
+}
+.footer a { color: var(--primary); text-decoration: none; }
+
+/* Plan tabs */
+.plan-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+.plan-badge {
+  padding: 4px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.plan-a { background: var(--success-light); color: var(--success); }
+.plan-b { background: var(--primary-light); color: var(--primary); }
+.plan-c { background: var(--warning-light); color: var(--warning); }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 { font-size: 22px; }
+  section { padding: 20px 16px; }
+  .toc ul { flex-direction: column; }
+  table { font-size: 12px; }
+  th, td { padding: 8px; }
+}
+
+/* Print */
+@media print {
+  .toc { display: none; }
+  section { box-shadow: none; border: 1px solid #ccc; page-break-inside: avoid; }
+  body { font-size: 12px; }
+}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>河南 2026 高考志愿填报方案</h1>
+  <p class="subtitle">生成时间：2026-06-25 | 考生：河南省物理方向</p>
+  <div class="score-badge">总分 419 分 | 位次 359,972 名 | 物理+化学+政治</div>
+</div>
+
+<div class="container">
+
+<nav class="toc">
+  <h3>目录导航</h3>
+  <ul>
+    <li><a href="#sec1">一、考生画像</a></li>
+    <li><a href="#sec2">二、政策与数据依据</a></li>
+    <li><a href="#sec3">三、核心判断</a></li>
+    <li><a href="#sec4">四、候选学校与专业池</a></li>
+    <li><a href="#sec5">五、方案A 稳妥保守型</a></li>
+    <li><a href="#sec6">六、方案B 均衡型</a></li>
+    <li><a href="#sec7">七、方案C 冲刺型</a></li>
+    <li><a href="#sec8">八、风险检查</a></li>
+    <li><a href="#sec9">九、最终建议</a></li>
+  </ul>
+</nav>
+
+<!-- Section 1 -->
+<section id="sec1">
+<h2>【一、考生画像】</h2>
+<table>
+<tr><th>项目</th><th>内容</th></tr>
+<tr><td>总分</td><td><strong>419分</strong></td></tr>
+<tr><td>全省位次</td><td><strong>第 359,972 名</strong>（物理方向）</td></tr>
+<tr><td>选科组合</td><td>物理 + 化学 + 政治</td></tr>
+<tr><td>外语语种</td><td>英语</td></tr>
+<tr><td>体检</td><td>无明显限制，女生，身高160cm</td></tr>
+<tr><td>意向批次</td><td>全部考虑（本科提前批 + 本科批 + 专科批）</td></tr>
+<tr><td>专项计划</td><td>考虑地方专项、高校专项</td></tr>
+<tr><td>意向专业</td><td>口腔医学、护理学等容易就业的方向</td></tr>
+<tr><td>不可接受项</td><td>暂无明确不可接受专业；不去东北、西北、偏远地区</td></tr>
+<tr><td>家庭预算</td><td>可接受民办本科，学费上限 3万/年</td></tr>
+<tr><td>升学目标</td><td>就业优先</td></tr>
+<tr><td>风险偏好</td><td>均衡</td></tr>
+<tr><td>就业地域</td><td>留河南或离家近的省市</td></tr>
+</table>
+</section>
+
+<!-- Section 2 -->
+<section id="sec2">
+<h2>【二、政策与数据依据】</h2>
+
+<h3>2026年河南省高考政策</h3>
+<table>
+<tr><th>项目</th><th>内容</th><th>来源</th></tr>
+<tr><td>物理类分数线</td><td><strong>特控线513 / 本科线419 / 专科线179</strong></td><td>河南省教育考试院</td></tr>
+<tr><td>历史类分数线</td><td>特控线534 / 本科线459 / 专科线179</td><td>河南省教育考试院</td></tr>
+<tr><td>志愿填报单位（本科批）</td><td>院校专业组，48个志愿，每组6专业+1调剂</td><td>官方文件</td></tr>
+<tr><td>本科提前批</td><td>专业+院校，64个志愿，<strong>不设</strong>服从调剂</td><td>官方文件</td></tr>
+<tr><td>专科批</td><td>院校专业组，48个志愿，设服从调剂</td><td>官方文件</td></tr>
+<tr><td>投档规则</td><td>分数优先、遵循志愿、一轮投档</td><td>官方文件</td></tr>
+<tr><td>退档规则</td><td>同批次仅一次投档机会，退档后直接滑入下一批次</td><td>官方文件</td></tr>
+<tr><td>同分排序规则</td><td>待核验</td><td>—</td></tr>
+</table>
+
+<h3>2025年参考数据</h3>
+<ul>
+<li>2025年物理类本科线：<strong>427分</strong>（2026年降至419分，降幅8分）</li>
+<li>2026年本科线419分对应位次：约348,358名（来源：gk100.com，<strong>待以河南省教育考试院一分一段表为准</strong>）</li>
+<li>考生自报位次359,972名，与公布本科线位次348,358存在差异，<strong>需以官方一分一段表最终确认</strong></li>
+</ul>
+
+<h3>近年录取数据（已核验部分）</h3>
+<table>
+<tr><th>学校</th><th>2025河南物理类数据</th><th>来源</th></tr>
+<tr><td>河南医学高等专科学校</td><td>护理412分/374,084位；全校最低412分</td><td>gk100.com</td></tr>
+<tr><td>郑州工业应用技术学院</td><td>第104/105/106组427分(=本科线)；第102组433分；第103组452分</td><td>gk100.com</td></tr>
+<tr><td>郑州西亚斯学院</td><td>第102组451分/304,565位；第101组455分/297,074位</td><td>gk100.com</td></tr>
+<tr><td>漯河医学高等专科学校</td><td>河南招生5004人，护理招500人；本省录取分数待核验</td><td>hfplg.com</td></tr>
+<tr><td>商丘医学高等专科学校</td><td>河南招生3076人，护理招生最多；本省录取分数待核验</td><td>hfplg.com</td></tr>
+<tr><td>河南护理职业学院</td><td>山东数据：护理423分/372,892位；河南本省数据待核验</td><td>gk100.com</td></tr>
+</table>
+
+<h3>其他省份参考数据（不能直接等同于河南录取分数）</h3>
+<table>
+<tr><th>学校</th><th>省份</th><th>专业</th><th>2025分数</th><th>2025位次</th></tr>
+<tr><td>漯河医学高等专科学校</td><td>贵州(物理)</td><td>口腔医学</td><td>412分</td><td>135,231位</td></tr>
+<tr><td>商丘医学高等专科学校</td><td>贵州(物理)</td><td>口腔医学</td><td>411分</td><td>136,414位</td></tr>
+<tr><td>郑州健康学院</td><td>贵州(物理)</td><td>口腔医学</td><td>393分</td><td>152,827位</td></tr>
+<tr><td>山东医学高等专科学校</td><td>贵州(物理)</td><td>口腔医学</td><td>437分</td><td>110,100位</td></tr>
+<tr><td>湖北中医药高等专科学校</td><td>贵州(物理)</td><td>口腔医学</td><td>433分</td><td>114,126位</td></tr>
+<tr><td>沧州医学高等专科学校</td><td>贵州(物理)</td><td>口腔医学</td><td>410分</td><td>136,870位</td></tr>
+<tr><td>漯河医学高等专科学校</td><td>浙江</td><td>口腔医学</td><td>519分</td><td>—</td></tr>
+<tr><td>漯河医学高等专科学校</td><td>浙江</td><td>护理</td><td>466分</td><td>—</td></tr>
+</table>
+
+<h3>不确定项（需以2026年官方发布为准）</h3>
+<ol>
+<li>2026年各高校在河南招生计划</li>
+<li>2026年各高校选科要求</li>
+<li>漯河医专、商丘医专等校2025年在河南具体专业录取分数（数据以图片形式发布，未能提取）</li>
+<li>考生位次359,972与本科线419分对应位次348,358的差异</li>
+<li>地方专项、高校专项2026年具体实施办法和资格要求</li>
+<li>2026年河南物理类一分一段表完整数据</li>
+</ol>
+</section>
+
+<!-- Section 3 -->
+<section id="sec3">
+<h2>【三、核心判断】</h2>
+
+<h3>考生定位</h3>
+<p>考生419分恰好等于2026年河南物理类本科线，处于<strong>本科批最底端</strong>。</p>
+
+<div class="callout">
+<p><strong>可冲层次（本科批）</strong>：2025年本科线427分对应的学校中，能压线录取的主要是民办本科冷门专业组。郑州工业应用技术学院2025年最低427分(=本科线)，2026年本科线降至419后可能有压线机会。郑州西亚斯学院2025年最低451分，远高于419，冲的可能性很小。</p>
+</div>
+
+<div class="callout success">
+<p><strong>较稳层次（专科批公办医学）</strong>：河南医学高等专科学校2025年河南物理类护理412分/374,084位，考生419分/359,972位高于该校录取线约11,112个位次，<strong>录取护理专业可能性较大</strong>。</p>
+</div>
+
+<div class="callout" style="background: var(--info-light); border-left-color: var(--info);">
+<p><strong>保底层次（专科批）</strong>：多所公办专科医学院校的护理等专业录取分数在412分以下，考生419分有保底空间。</p>
+</div>
+
+<h3>各专业可行性判断</h3>
+<table>
+<tr><th>专业</th><th>本科批</th><th>专科批</th></tr>
+<tr>
+  <td><strong>口腔医学</strong></td>
+  <td><span class="risk-chong">基本不可能</span> 口腔医学本科录取分远超本科线，419分无可行选项</td>
+  <td><span class="risk-chong">需冲刺</span> 漯河医专、商丘医专等设有口腔医学专科，但竞争比护理激烈</td>
+</tr>
+<tr>
+  <td><strong>护理学</strong></td>
+  <td><span class="risk-chong">极少数民办本科可能压线</span> 郑州工业应用技术学院有护理学，2025年最低427分(=本科线)</td>
+  <td><span class="risk-wen">选择较多</span> 河南医学高等专科学校2025年护理412分，考生位次高于该校</td>
+</tr>
+</table>
+
+<h3>应重点规避的风险</h3>
+<ol>
+<li><strong>本科批退档风险</strong>：退档后直接滑入专科批，无征集志愿补救机会</li>
+<li><strong>口腔医学竞争风险</strong>：即使在专科层次也是热门专业，不能全部押注</li>
+<li><strong>数据不确定性风险</strong>：多所目标学校河南本省2025年录取数据未能获取</li>
+<li><strong>位次差异风险</strong>：考生位次359,972与本科线位次348,358存在差异，需核实</li>
+</ol>
+</section>
+
+<!-- Section 4 -->
+<section id="sec4">
+<h2>【四、候选学校与专业池】</h2>
+
+<h3>本科批候选</h3>
+<table>
+<tr><th>学校名称</th><th>专业组</th><th>城市</th><th>办学性质</th><th>2025最低</th><th>风险</th><th>推荐理由</th></tr>
+<tr><td>郑州工业应用技术学院</td><td>第104/105/106组</td><td>郑州</td><td>民办本科</td><td>427分</td><td><span class="risk-chong">冲</span></td><td>2025年压本科线录取，有护理学专业</td></tr>
+<tr><td>河南开封科技传媒学院</td><td>待核验</td><td>开封</td><td>民办本科</td><td>待核验</td><td><span class="risk-chong">冲</span></td><td>排名348K附近可上</td></tr>
+<tr><td>商丘工学院</td><td>待核验</td><td>商丘</td><td>民办本科</td><td>待核验</td><td><span class="risk-chong">冲</span></td><td>同上</td></tr>
+<tr><td>新乡工程学院</td><td>待核验</td><td>新乡</td><td>民办本科</td><td>待核验</td><td><span class="risk-chong">冲</span></td><td>同上</td></tr>
+<tr><td>安阳学院</td><td>待核验</td><td>安阳</td><td>民办本科</td><td>待核验</td><td><span class="risk-chong">冲</span></td><td>同上</td></tr>
+<tr><td>郑州西亚斯学院</td><td>待核验</td><td>郑州</td><td>民办本科</td><td>451分</td><td><span class="risk-chong">冲(较低)</span></td><td>2025年最低451分，远高于419</td></tr>
+</table>
+
+<h3>专科批候选</h3>
+<table>
+<tr><th>学校名称</th><th>专业</th><th>城市</th><th>办学性质</th><th>2025参考数据</th><th>风险</th><th>推荐理由</th></tr>
+<tr><td><strong>河南医学高等专科学校</strong></td><td>护理</td><td>郑州</td><td>公办专科</td><td><strong>412分/374,084位(河南)</strong></td><td><span class="risk-wen">稳→保</span></td><td>考生419分高于412分，录取可能性较大；公办，学费低</td></tr>
+<tr><td>漯河医学高等专科学校</td><td>口腔医学</td><td>漯河</td><td>公办专科</td><td>河南待核验(贵州412分)</td><td><span class="risk-chong">冲</span></td><td>有口腔医学，河南招生5004人</td></tr>
+<tr><td>漯河医学高等专科学校</td><td>护理</td><td>漯河</td><td>公办专科</td><td>河南待核验(浙江466分)</td><td><span class="risk-wen">稳</span></td><td>护理招500人，招生量大</td></tr>
+<tr><td>商丘医学高等专科学校</td><td>口腔医学</td><td>商丘</td><td>公办专科</td><td>河南待核验(贵州411分)</td><td><span class="risk-chong">冲</span></td><td>有口腔医学，河南招生3076人</td></tr>
+<tr><td>商丘医学高等专科学校</td><td>护理</td><td>商丘</td><td>公办专科</td><td>河南待核验</td><td><span class="risk-wen">稳</span></td><td>护理为河南招生量最大专业</td></tr>
+<tr><td>河南护理职业学院</td><td>护理</td><td>郑州</td><td>公办专科</td><td>河南待核验(山东423分)</td><td><span class="risk-wen">稳→保</span></td><td>专业护理院校</td></tr>
+<tr><td>郑州健康学院</td><td>口腔医学</td><td>郑州</td><td>待核验</td><td>河南待核验(贵州393分)</td><td><span class="risk-chongbao">稳/保</span></td><td>有口腔医学，贵州分数较低</td></tr>
+<tr><td>山东医学高等专科学校</td><td>口腔医学</td><td>临沂</td><td>公办专科</td><td>河南待核验(贵州437分)</td><td><span class="risk-chong">冲</span></td><td>省外公办，山东离河南近</td></tr>
+<tr><td>湖北中医药高等专科学校</td><td>口腔医学</td><td>荆州</td><td>公办专科</td><td>河南待核验(贵州433分)</td><td><span class="risk-chong">冲</span></td><td>省外公办，湖北离河南近</td></tr>
+<tr><td>沧州医学高等专科学校</td><td>口腔医学</td><td>沧州</td><td>公办专科</td><td>河南待核验(贵州410分)</td><td><span class="risk-wen">稳</span></td><td>河北与河南相邻</td></tr>
+</table>
+
+<div class="callout warning">
+<p><strong>重要说明：</strong>以上其他省份（贵州、浙江、山东等）录取数据仅供参考，<strong>不能直接等同于河南省录取分数</strong>。各省考生基数、分数分布不同。河南本省录取数据标注"待核验"的，务必在填报前查阅河南省教育考试院公布的官方数据。</p>
+</div>
+</section>
+
+<!-- Section 5: Plan A -->
+<section id="sec5">
+<h2>【五、方案 A：稳妥保守型】</h2>
+<div class="plan-header"><span class="plan-badge plan-a">方案A</span><span>冲稳保比例：整体约 2:4:4</span></div>
+<p><strong>方案思路：</strong>以专科批公办医学院校护理学为绝对核心，最大限度降低滑档风险。本科批仅作为"彩票"尝试。口腔医学作为专科批冲刺项，但不作为主要目标。</p>
+
+<h3>本科批（5个核心冲的志愿）</h3>
+
+<div class="volunteer risk-chong-card">
+<h4>志愿1：郑州工业应用技术学院 <span class="risk-chong">冲</span></h4>
+<p class="detail"><strong>城市：</strong>郑州 | <strong>办学性质：</strong>民办本科 | <strong>2025年位次：</strong>427分/约348,358位（=2025本科线）</p>
+<p class="detail"><strong>推荐理由：</strong>2025年最低组恰好压本科线427，2026年本科线降至419后可能有压线机会。该校设有护理学专业，若427分组中包含护理学则有额外价值。</p>
+<p class="detail"><strong>调剂风险：</strong>存在，该校有非医学专业 | <strong>限制提示：</strong>民办学费待核验（通常1.5-2.5万/年）</p>
+</div>
+
+<div class="volunteer risk-chong-card">
+<h4>志愿2：河南开封科技传媒学院 <span class="risk-chong">冲</span></h4>
+<p class="detail"><strong>城市：</strong>开封（省内） | <strong>办学性质：</strong>民办本科 | <strong>2025年位次：</strong>待核验</p>
+<p class="detail"><strong>推荐理由：</strong>2026年排名348,000位次推荐名单中出现，可能有压线专业组</p>
+</div>
+
+<div class="volunteer risk-chong-card">
+<h4>志愿3-5：商丘工学院、新乡工程学院、安阳学院 <span class="risk-chong">冲</span></h4>
+<p class="detail"><strong>推荐理由：</strong>省内民办本科，2025年排名348,000位次推荐名单中出现，压线尝试</p>
+</div>
+
+<h3>专科批（10个核心志愿）</h3>
+
+<div class="volunteer risk-chong-card">
+<h4>志愿1：漯河医学高等专科学校 - 口腔医学 <span class="risk-chong">冲</span></h4>
+<p class="detail"><strong>城市：</strong>漯河（省内） | <strong>办学性质：</strong>公办专科 | <strong>近年位次：</strong>河南待核验；贵州412分/135,231位</p>
+<p class="detail"><strong>推荐理由：</strong>公办医学院校，设有口腔医学专科专业，河南招生5004人，规模大</p>
+</div>
+
+<div class="volunteer risk-chong-card">
+<h4>志愿2：商丘医学高等专科学校 - 口腔医学 <span class="risk-chong">冲</span></h4>
+<p class="detail"><strong>城市：</strong>商丘（省内） | <strong>办学性质：</strong>公办专科 | <strong>近年位次：</strong>河南待核验；贵州411分/136,414位</p>
+</div>
+
+<div class="volunteer risk-wen-card">
+<h4>志愿3：河南医学高等专科学校 - 护理 <span class="risk-wen">稳</span> ⭐核心志愿</h4>
+<p class="detail"><strong>城市：</strong>郑州（省内） | <strong>办学性质：</strong>公办专科 | <strong>近年位次：</strong>2025年河南物理类412分/374,084位</p>
+<p class="detail"><strong>推荐理由：</strong>考生419分/359,972位高于该校2025年护理录取线412分/374,084位约11,112个位次，<strong>录取可能性较强</strong>。公办院校，学费低（约5000元/年）。</p>
+<p class="detail"><strong>放在此位置的原因：</strong>稳的核心志愿，提高护理学录取概率</p>
+</div>
+
+<div class="volunteer risk-wen-card">
+<h4>志愿4-6：漯河医专(护理)、商丘医专(护理)、河南护理职业学院(护理) <span class="risk-wen">稳</span></h4>
+<p class="detail"><strong>推荐理由：</strong>均为公办专科，护理招生量大，作为稳的补充</p>
+</div>
+
+<div class="volunteer risk-wen-card">
+<h4>志愿7：沧州医学高等专科学校 - 口腔医学 <span class="risk-wen">稳</span></h4>
+<p class="detail"><strong>城市：</strong>沧州（河北） | <strong>办学性质：</strong>公办专科 | 河南待核验；贵州410分</p>
+</div>
+
+<div class="volunteer risk-chong-card">
+<h4>志愿8-10：郑州健康学院(口腔)、山东医专(口腔)、湖北中医药高专(口腔) <span class="risk-chong">冲</span>/<span class="risk-bao">保</span></h4>
+<p class="detail"><strong>推荐理由：</strong>补充口腔医学冲刺和保底</p>
+</div>
+
+<p><strong>方案A冲稳保比例：</strong>本科批5冲 + 专科批4冲:4稳:2保 ≈ 整体 2:4:4</p>
+</section>
+
+<!-- Section 6: Plan B -->
+<section id="sec6">
+<h2>【六、方案 B：均衡型】</h2>
+<div class="plan-header"><span class="plan-badge plan-b">方案B</span><span>冲稳保比例：整体约 3:4:3</span></div>
+<p><strong>方案思路：</strong>本科批和专科批双线并重。本科批集中冲击有护理学等医学相关专业的民办本科，专科批同时布局口腔医学和护理学。</p>
+
+<h3>本科批（5个核心志愿）</h3>
+<div class="volunteer risk-chong-card">
+<h4>志愿1：郑州工业应用技术学院 - 优先选含护理学的专业组 <span class="risk-chong">冲</span></h4>
+<p class="detail"><strong>推荐理由：</strong>设有护理学专业，2025年最低组恰好压本科线，2026年本科线降8分后可能有压线机会</p>
+</div>
+<div class="volunteer risk-chong-card">
+<h4>志愿2：郑州西亚斯学院 <span class="risk-chong">冲(远冲)</span></h4>
+<p class="detail"><strong>推荐理由：</strong>省内知名民办本科，2025年最低451分，与419差距较大，属于远冲</p>
+</div>
+<div class="volunteer risk-chong-card">
+<h4>志愿3-5：河南开封科技传媒学院、新乡工程学院、安阳学院 <span class="risk-chong">冲</span></h4>
+<p class="detail"><strong>推荐理由：</strong>压线尝试</p>
+</div>
+
+<h3>专科批（10个核心志愿）</h3>
+<div class="volunteer risk-chong-card">
+<h4>志愿1-3：漯河医专(口腔)、商丘医专(口腔)、山东医专(口腔) <span class="risk-chong">冲</span></h4>
+<p class="detail"><strong>推荐理由：</strong>公办专科口腔医学冲刺</p>
+</div>
+<div class="volunteer risk-wen-card">
+<h4>志愿4-7：河南医学高等专科学校(护理)、漯河医专(护理)、商丘医专(护理)、河南护理职业学院(护理) <span class="risk-wen">稳</span></h4>
+<p class="detail"><strong>推荐理由：</strong>公办专科护理学，稳的核心</p>
+</div>
+<div class="volunteer risk-wen-card">
+<h4>志愿8：沧州医学高等专科学校 - 口腔医学 <span class="risk-wen">稳</span></h4>
+</div>
+<div class="volunteer">
+<h4>志愿9-10：郑州健康学院(口腔)、湖北中医药高专(口腔) <span class="risk-chongbao">稳/保</span></h4>
+</div>
+
+<p><strong>方案B冲稳保比例：</strong>本科批5冲 + 专科批4冲:4稳:2保 ≈ 整体 3:4:3</p>
+</section>
+
+<!-- Section 7: Plan C -->
+<section id="sec7">
+<h2>【七、方案 C：冲刺型】</h2>
+<div class="plan-header"><span class="plan-badge plan-c">方案C</span><span>冲稳保比例：整体约 4:3:3</span></div>
+<p><strong>方案思路：</strong>在合理保底前提下，最大化本科批冲刺和口腔医学冲刺。保底志愿最大限度降低滑档风险。</p>
+
+<h3>本科批（6个核心志愿）</h3>
+<div class="volunteer risk-chong-card">
+<h4>志愿1：郑州工业应用技术学院 - 优先含护理学/医学相关专业的组 <span class="risk-chong">冲</span></h4>
+</div>
+<div class="volunteer risk-chong-card">
+<h4>志愿2：郑州西亚斯学院 - 最低分专业组 <span class="risk-chong">冲(远冲)</span></h4>
+</div>
+<div class="volunteer risk-chong-card">
+<h4>志愿3-6：河南开封科技传媒学院、商丘工学院、新乡工程学院、广州新华学院 <span class="risk-chong">冲</span></h4>
+<p class="detail"><strong>推荐理由：</strong>省内+省外民办本科，最大化上本科概率</p>
+</div>
+
+<h3>专科批（10个核心志愿）</h3>
+<div class="volunteer risk-chong-card">
+<h4>志愿1-5：漯河医专(口腔)、商丘医专(口腔)、山东医专(口腔)、湖北中医药高专(口腔)、沧州医专(口腔) <span class="risk-chong">冲</span></h4>
+<p class="detail"><strong>推荐理由：</strong>全力冲刺公办专科口腔医学</p>
+</div>
+<div class="volunteer risk-wen-card">
+<h4>志愿6-8：河南医学高等专科学校(护理)、漯河医专(护理)、商丘医专(护理) <span class="risk-wen">稳</span></h4>
+</div>
+<div class="volunteer">
+<h4>志愿9-10：郑州健康学院(口腔)、河南护理职业学院(护理) <span class="risk-bao">保</span></h4>
+<p class="detail"><strong>推荐理由：</strong>终极保底，确保有学可上</p>
+</div>
+
+<p><strong>方案C冲稳保比例：</strong>本科批6冲 + 专科批5冲:3稳:2保 ≈ 整体 4:3:3</p>
+</section>
+
+<!-- Section 8: Risk Check -->
+<section id="sec8">
+<h2>【八、退档、滑档与调剂风险检查】</h2>
+
+<div class="check-item">
+<div class="check-icon check-risk">!</div>
+<div class="check-content">
+<h4>检查项1：是否满足选科要求</h4>
+<p><strong>结果：存在风险</strong>。考生选科为物理+化学+政治。口腔医学通常要求物理+化学，考生符合；但部分学校可能要求生物而非政治。<strong>建议：</strong>填报前逐一核验目标高校2026年招生章程中的选考科目要求。</p>
+</div>
+</div>
+
+<div class="check-item">
+<div class="check-icon check-pass">✓</div>
+<div class="check-content">
+<h4>检查项2：是否有体检限制</h4>
+<p><strong>结果：通过（基本）</strong>。考生体检无明显限制，女生160cm。护理学部分院校要求女生155cm以上，考生满足。<strong>建议：</strong>确认色觉是否完全正常（不能是色盲、色弱）。</p>
+</div>
+</div>
+
+<div class="check-item">
+<div class="check-icon check-wait">?</div>
+<div class="check-content">
+<h4>检查项3：是否有单科成绩限制</h4>
+<p><strong>结果：待核验</strong>。部分医学院校对英语或化学单科成绩有要求。<strong>建议：</strong>核验各高校招生章程中是否有单科成绩要求。</p>
+</div>
+</div>
+
+<div class="check-item">
+<div class="check-icon check-pass">✓</div>
+<div class="check-content">
+<h4>检查项4：是否有外语语种限制</h4>
+<p><strong>结果：通过</strong>。考生外语为英语，大多数医学院校接受英语考生。</p>
+</div>
+</div>
+
+<div class="check-item">
+<div class="check-icon check-risk">!</div>
+<div class="check-content">
+<h4>检查项5：是否存在高收费专业</h4>
+<p><strong>结果：存在风险</strong>。民办本科学费通常1.5-2.5万/年，在3万预算内；但中外合作办学可能超3万。<strong>建议：</strong>填报前核验每个专业组的具体学费标准。</p>
+</div>
+</div>
+
+<div class="check-item">
+<div class="check-icon check-wait">?</div>
+<div class="check-content">
+<h4>检查项6：是否存在不同校区差异</h4>
+<p><strong>结果：待核验</strong>。部分学校有多个校区，毕业证可能有差异。<strong>建议：</strong>查阅各高校招生章程中关于校区说明。</p>
+</div>
+</div>
+
+<div class="check-item">
+<div class="check-icon check-risk">!</div>
+<div class="check-content">
+<h4>检查项7：是否存在专业组内调剂到不可接受专业的风险</h4>
+<p><strong>结果：存在风险</strong>。院校专业组内可能同时包含医学和非医学专业，服从调剂后可能被调剂到非医学专业。<strong>建议：</strong>仔细核验每个专业组内的6个专业列表。</p>
+</div>
+</div>
+
+<div class="check-item">
+<div class="check-icon check-risk">!</div>
+<div class="check-content">
+<h4>检查项8：是否有滑档风险</h4>
+<p><strong>结果：存在风险（本科批），低风险（专科批）</strong>。考生处于本科线边缘，本科批如全部未投档将滑入专科批。专科批河南医学高等专科学校2025年护理412分低于考生419分，保底充分。<strong>建议：</strong>本科批和专科批各48个志愿全部填满。</p>
+</div>
+</div>
+</section>
+
+<!-- Section 9: Final Recommendation -->
+<section id="sec9">
+<h2>【九、最终建议】</h2>
+
+<div class="final-rec">
+<h3>最推荐方案：方案A（稳妥保守型）</h3>
+<p><strong>推荐理由：</strong></p>
+<ol>
+<li><strong>匹配考生定位</strong>：考生419分=本科线，处于本科批最底端。方案A以专科批公办医学院校护理学为核心，最大限度降低滑档风险。</li>
+<li><strong>核心目标保障</strong>：河南医学高等专科学校2025年护理412分/374,084位，考生位次高于约11,112位，是三套方案中录取确定性最高的志愿。公办专科，学费低（约5000元/年）。</li>
+<li><strong>保留冲刺空间</strong>：专科批前部有口腔医学冲刺志愿，如果未录，后续护理学志愿兜底。</li>
+<li><strong>风险可控</strong>：本科批全冲不抱期望，专科批有明确的稳和保底，降低"两头落空"的风险。</li>
+</ol>
+</div>
+
+<h3>关于口腔医学的特别说明</h3>
+<p>口腔医学是考生首选意向，但在419分（本科线）水平：</p>
+<ul>
+<li><strong>本科口腔医学</strong>：无可行选项</li>
+<li><strong>专科口腔医学</strong>：有机会但属于冲刺项，不能作为唯一目标</li>
+</ul>
+<p>建议将口腔医学作为冲刺项放入专科批前部，同时以护理学作为稳和保底。护理学就业方向较广（就业前景待核验，建议查阅各校最新就业质量报告）。</p>
+
+<h3>关于地方专项和高校专项</h3>
+<p>考生表示考虑地方专项和高校专项。这两类专项计划可能提供降分录取机会，但有资格条件限制（通常要求农村户籍等）。建议：</p>
+<ol>
+<li>核验自己是否符合地方专项和高校专项的户籍/学籍要求</li>
+<li>关注河南省教育考试院发布的2026年专项计划实施办法</li>
+<li>如果符合条件，在相应批次填报专项计划志愿</li>
+</ol>
+
+<div class="callout danger">
+<h3>重要提醒</h3>
+<ol>
+<li><strong>填报前务必核对</strong>河南省教育考试院公布的2026年最新招生计划目录</li>
+<li><strong>核对目标高校2026年招生章程</strong>中的选科要求、体检要求、单科要求、学费标准</li>
+<li><strong>在志愿填报系统中确认实时信息</strong>，包括各专业组的实际专业列表和学费</li>
+<li><strong>本方案基于2025年历史数据</strong>，2026年本科线从427降至419（降8分），各校录取位次可能发生位移</li>
+<li><strong>标注"待核验"的数据</strong>务必通过河南省教育考试院官网、阳光高考平台或各高校招生网核实</li>
+<li><strong>一分一段表</strong>：请以河南省教育考试院官方发布为准，确认考生419分的准确位次</li>
+<li><strong>志愿填报时间</strong>：河南省2026年高考志愿填报预计6月26日开启</li>
+</ol>
+</div>
+</section>
+
+</div>
+
+<div class="footer">
+<p>本方案由"河南2026高考志愿填报规划Agent"生成 | 所有判断基于位次分析、2025年历史数据和2026年已公布政策</p>
+<p><strong>不承诺录取结果</strong> | 填报前请以官方最新发布信息为准</p>
+<p style="margin-top:8px;">数据来源：<a href="https://gaokao.haedu.cn/scoreline/" target="_blank">河南省教育考试院</a> | <a href="https://gaokao.chsi.com.cn" target="_blank">阳光高考平台</a> | gk100.com | hfplg.com</p>
+</div>
+
+</body>
+</html>
