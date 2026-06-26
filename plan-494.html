@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>河南2026高考志愿填报方案 - 494分/物理方向</title>
+<style>
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1e40af;
+  --reach: #f59e0b;
+  --stable: #10b981;
+  --safety: #3b82f6;
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --text: #1e293b;
+  --text-light: #64748b;
+  --border: #e2e8f0;
+  --danger: #ef4444;
+  --warning: #f59e0b;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif; background:var(--bg); color:var(--text); line-height:1.8; }
+.hero { background:linear-gradient(135deg,#1e3a8a 0%,#2563eb 50%,#3b82f6 100%); color:#fff; padding:3rem 1.5rem 2rem; text-align:center; }
+.hero h1 { font-size:2rem; font-weight:700; margin-bottom:0.5rem; }
+.hero .subtitle { font-size:1.1rem; opacity:0.9; }
+.hero .score-badge { display:inline-block; background:rgba(255,255,255,0.2); border:1px solid rgba(255,255,255,0.3); border-radius:999px; padding:0.3rem 1.2rem; margin:0.5rem 0.3rem; font-size:0.95rem; }
+.toc { background:var(--card); border-bottom:1px solid var(--border); padding:1rem 1.5rem; position:sticky; top:0; z-index:100; box-shadow:0 1px 3px rgba(0,0,0,0.05); }
+.toc-list { display:flex; flex-wrap:wrap; gap:0.5rem; justify-content:center; list-style:none; }
+.toc-list a { display:inline-block; padding:0.25rem 0.8rem; border-radius:6px; text-decoration:none; font-size:0.85rem; color:var(--text-light); transition:all 0.2s; }
+.toc-list a:hover { background:var(--primary); color:#fff; }
+.container { max-width:900px; margin:0 auto; padding:1.5rem; }
+.section { background:var(--card); border-radius:12px; padding:2rem 1.5rem; margin-bottom:1.5rem; box-shadow:0 1px 3px rgba(0,0,0,0.06); }
+.section h2 { font-size:1.4rem; color:var(--primary-dark); margin-bottom:1rem; padding-bottom:0.5rem; border-bottom:2px solid var(--border); }
+.section h3 { font-size:1.15rem; color:var(--text); margin:1.2rem 0 0.6rem; }
+.profile-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:0.5rem 2rem; }
+.profile-item { display:flex; justify-content:space-between; padding:0.4rem 0; border-bottom:1px dashed var(--border); font-size:0.95rem; }
+.profile-item .label { color:var(--text-light); }
+.profile-item .value { font-weight:600; }
+.info-box { background:#eff6ff; border-left:4px solid var(--primary); border-radius:6px; padding:1rem 1.2rem; margin:1rem 0; }
+.info-box ul { list-style:none; }
+.info-box li { padding:0.2rem 0; font-size:0.9rem; }
+.info-box li::before { content:"📌 "; }
+.warning-box { background:#fef3c7; border-left:4px solid var(--warning); border-radius:6px; padding:1rem 1.2rem; margin:1rem 0; }
+.warning-box p { font-size:0.9rem; color:#92400e; }
+table { width:100%; border-collapse:collapse; margin:1rem 0; font-size:0.85rem; }
+table th, table td { border:1px solid var(--border); padding:0.5rem 0.6rem; text-align:left; }
+table th { background:#f1f5f9; font-weight:600; color:var(--text); white-space:nowrap; }
+table tr:nth-child(even) { background:#f8fafc; }
+.badge { display:inline-block; padding:0.15rem 0.6rem; border-radius:4px; font-size:0.75rem; font-weight:600; color:#fff; white-space:nowrap; }
+.badge.reach { background:var(--reach); }
+.badge.stable { background:var(--stable); }
+.badge.safety { background:var(--safety); }
+.badge.public { background:#6366f1; }
+.plan-card { border:1px solid var(--border); border-radius:8px; overflow:hidden; margin:1rem 0; }
+.plan-card.reach { border-left:4px solid var(--reach); }
+.plan-card.stable { border-left:4px solid var(--stable); }
+.plan-card.safety { border-left:4px solid var(--safety); }
+.plan-card .card-header { display:flex; justify-content:space-between; align-items:center; padding:0.8rem 1.2rem; background:#f8fafc; border-bottom:1px solid var(--border); }
+.plan-card .card-header .vol-num { font-weight:700; color:var(--text-light); font-size:0.85rem; }
+.plan-card .card-header .school-name { font-weight:600; font-size:1rem; }
+.plan-card .card-body { padding:0.8rem 1.2rem; }
+.plan-card .card-body p { font-size:0.9rem; margin:0.3rem 0; }
+.plan-card .card-body .label { color:var(--text-light); display:inline-block; min-width:100px; }
+.ratio-bar { display:flex; height:24px; border-radius:6px; overflow:hidden; margin:0.5rem 0 1rem; }
+.ratio-bar .reach-bar { background:var(--reach); }
+.ratio-bar .stable-bar { background:var(--stable); }
+.ratio-bar .safety-bar { background:var(--safety); }
+.ratio-bar span { display:flex; align-items:center; justify-content:center; font-size:0.8rem; color:#fff; font-weight:600; }
+.check-item { display:flex; align-items:flex-start; gap:0.5rem; padding:0.6rem 0; border-bottom:1px dashed var(--border); }
+.check-item .icon { font-size:1.2rem; flex-shrink:0; }
+.check-item .content p { font-size:0.9rem; margin:0.1rem 0; }
+.check-item .content .result-pass { color:var(--stable); font-weight:600; }
+.check-item .content .result-risk { color:var(--danger); font-weight:600; }
+.final-rec { background:linear-gradient(135deg,#eff6ff 0%,#dbeafe 100%); border:2px solid var(--primary); border-radius:12px; padding:2rem; text-align:center; }
+.final-rec h3 { color:var(--primary-dark); font-size:1.5rem; margin-bottom:0.5rem; }
+.reminder { background:#fef2f2; border-left:4px solid var(--danger); border-radius:6px; padding:1rem 1.2rem; margin:1rem 0; }
+.reminder p { font-size:0.9rem; color:#991b1b; }
+.reminder ul { list-style:none; margin-top:0.5rem; }
+.reminder li { padding:0.2rem 0; font-size:0.9rem; color:#991b1b; }
+.reminder li::before { content:"⚠️ "; }
+.footer { text-align:center; padding:2rem 1.5rem; color:var(--text-light); font-size:0.85rem; }
+@media(max-width:640px) {
+  .hero h1 { font-size:1.5rem; }
+  .hero .score-badge { font-size:0.8rem; padding:0.2rem 0.8rem; }
+  .section { padding:1.5rem 1rem; }
+  table { font-size:0.75rem; }
+  table th, table td { padding:0.3rem 0.4rem; }
+  .toc-list a { font-size:0.75rem; padding:0.2rem 0.5rem; }
+  .profile-grid { grid-template-columns:1fr; }
+}
+@media print {
+  .toc { position:static; box-shadow:none; }
+  .section { box-shadow:none; page-break-inside:avoid; }
+  .hero { background:#1e3a8a !important; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>河南2026高考志愿填报方案</h1>
+  <p class="subtitle">物理方向 · 494分 · 位次204,305 · 就业优先</p>
+  <div>
+    <span class="score-badge">总分 494</span>
+    <span class="score-badge">位次 204,305</span>
+    <span class="score-badge">物+化+政</span>
+    <span class="score-badge">本科批</span>
+  </div>
+</div>
+
+<nav class="toc">
+  <ul class="toc-list">
+    <li><a href="#s1">考生画像</a></li>
+    <li><a href="#s2">政策依据</a></li>
+    <li><a href="#s3">核心判断</a></li>
+    <li><a href="#s4">候选池</a></li>
+    <li><a href="#s5">方案A</a></li>
+    <li><a href="#s6">方案B</a></li>
+    <li><a href="#s7">方案C</a></li>
+    <li><a href="#s8">风险检查</a></li>
+    <li><a href="#s9">最终建议</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+
+<!-- ==================== Section 1: 考生画像 ==================== -->
+<div class="section" id="s1">
+  <h2>一、考生画像</h2>
+  <div class="profile-grid">
+    <div class="profile-item"><span class="label">总分</span><span class="value">494分</span></div>
+    <div class="profile-item"><span class="label">全省位次</span><span class="value">第204,305名（物理方向）</span></div>
+    <div class="profile-item"><span class="label">选科组合</span><span class="value">物理+化学+政治</span></div>
+    <div class="profile-item"><span class="label">外语语种</span><span class="value">英语</span></div>
+    <div class="profile-item"><span class="label">体检限制</span><span class="value">无明显限制（女生，165cm）</span></div>
+    <div class="profile-item"><span class="label">意向批次</span><span class="value">本科批</span></div>
+    <div class="profile-item"><span class="label">专项计划</span><span class="value">不考虑</span></div>
+    <div class="profile-item"><span class="label">意向专业</span><span class="value">就业为主</span></div>
+    <div class="profile-item"><span class="label">不可接受项</span><span class="value">师范类、东北/西北偏远省份</span></div>
+    <div class="profile-item"><span class="label">家庭预算</span><span class="value">公办（不接受高收费）</span></div>
+    <div class="profile-item"><span class="label">升学目标</span><span class="value">就业优先</span></div>
+    <div class="profile-item"><span class="label">风险偏好</span><span class="value">均衡</span></div>
+    <div class="profile-item"><span class="label">地域偏好</span><span class="value">郑州＞洛阳＞外省省会＞其他</span></div>
+  </div>
+</div>
+
+<!-- ==================== Section 2: 政策与数据依据 ==================== -->
+<div class="section" id="s2">
+  <h2>二、政策与数据依据</h2>
+
+  <h3>2026年河南高考分数线（物理类）</h3>
+  <table>
+    <tr><th>线型</th><th>分数</th><th>线上人数</th></tr>
+    <tr><td>特控线</td><td>513</td><td>约165,386</td></tr>
+    <tr><td>本科线</td><td>419</td><td>约359,972</td></tr>
+    <tr><td>专科线</td><td>179</td><td>—</td></tr>
+  </table>
+  <p style="font-size:0.85rem;color:var(--text-light);">来源：大河网、央广网、网易新闻2026-06-25报道。考生494分高于本科线75分，低于特控线19分，处于本科中段。</p>
+
+  <h3>志愿填报规则</h3>
+  <div class="info-box">
+    <ul>
+      <li><strong>批次</strong>：本科批</li>
+      <li><strong>志愿单位</strong>：院校专业组</li>
+      <li><strong>志愿数量</strong>：48个院校专业组（每组6个专业+1个"是否服从组内调剂"选项）</li>
+      <li><strong>投档规则</strong>：分数优先、遵循志愿、一轮投档（调档比例≤105%）</li>
+      <li><strong>退档规则</strong>：一轮投档后退档则本批次所有志愿失效，只能参加征集志愿或下一批次</li>
+      <li><strong>同分排序</strong>：语数之和→语数单科最高→外语→首选科目→再选科目最高</li>
+      <li><strong>调剂范围</strong>：仅限组内调剂，不可跨组、跨校调剂</li>
+    </ul>
+  </div>
+
+  <h3>数据来源与参考说明</h3>
+  <div class="info-box">
+    <ul>
+      <li>2026年一分一段表：来源hfplg.com，与CNR官方公布的本科线以上359,972人、特控线以上165,386人交叉验证一致</li>
+      <li>2025年各校投档数据：来源hfplg.com、gk100.com（2025为河南新高考首年，最直接参考）</li>
+      <li>2023-2024年旧高考（文理科）数据：作为辅助参考，位次换算存在系统性差异</li>
+      <li>各校王牌专业排名：来源校友会中国大学专业排名、gk100.com</li>
+      <li>就业数据：来源麦可思研究院（MyCOS）2025年就业蓝皮书</li>
+    </ul>
+  </div>
+
+  <div class="warning-box">
+    <p><strong>不确定项：</strong>2026年各校专业组设置和招生计划可能调整，2025年为新高考首年数据可能存在异常波动。所有历史数据仅供参考，需以2026年河南省教育考试院官方发布的招生计划为准。</p>
+  </div>
+</div>
+
+<!-- ==================== Section 3: 核心判断 ==================== -->
+<div class="section" id="s3">
+  <h2>三、核心判断</h2>
+
+  <p>该生2026年物理类494分，位次204,305，高于本科线75分，低于特控线19分，处于<strong>本科中段</strong>。2025年同位次约对应502-503分，可参考2025年该分段院校专业组录取数据。</p>
+
+  <h3>分层定位</h3>
+  <table>
+    <tr><th>层次</th><th>2025年录取位次区间</th><th>代表院校</th><th>说明</th></tr>
+    <tr><td><span class="badge reach">冲</span></td><td>195,000-205,000</td><td>洛阳理工学院(物+化)199,910、河南牧业经济学院103组203,899</td><td>考生位次略低于往年录取位次，有机会但风险较高</td></tr>
+    <tr><td><span class="badge stable">稳</span></td><td>205,000-225,000</td><td>湖北经济学院209,695、河南工程学院211,621、河南财政金融学院223,265等</td><td>考生位次高于往年录取位次，录取可能性较强</td></tr>
+    <tr><td><span class="badge safety">保</span></td><td>225,000-235,000</td><td>中原工学院501组229,094、南阳理工学院501组231,000等</td><td>考生位次远高于往年录取位次，用于兜底</td></tr>
+  </table>
+
+  <h3>重点风险</h3>
+  <div class="warning-box">
+    <p>1. <strong>可冲选项有限</strong>：在"郑州公办、非中外合作、非师范类"约束下，2025年位次低于204,305的院校专业组仅2个（洛阳理工学院物+化组、河南牧业经济学院103组）。</p>
+    <p>2. <strong>专业组内调剂风险</strong>：部分院校专业组内冷热专业差异大，服从调剂可能被分配到非意向专业，需逐组核实专业组内包含哪些专业。</p>
+    <p>3. <strong>招生计划变化</strong>：2026年各校专业组设置和招生人数可能调整，2025年数据为唯一新高考参考年，波动风险存在。</p>
+    <p>4. <strong>就业判断局限</strong>：就业前景评价基于麦可思公开数据和校友会排名，具体就业情况建议查阅各校最新就业质量报告。</p>
+  </div>
+</div>
+
+<!-- ==================== Section 4: 候选学校与专业池 ==================== -->
+<div class="section" id="s4">
+  <h2>四、候选学校与专业池</h2>
+  <p>以下为根据考生条件筛选的候选院校专业组，均 为<strong>公办</strong>、<strong>非师范类</strong>、<strong>非中外合作</strong>（特殊标注除外），位于<strong>郑州/洛阳/外省省会/其他河南城市</strong>。</p>
+
+  <table>
+    <tr>
+      <th>学校名称</th><th>专业组</th><th>城市</th><th>2025分数/位次</th><th>选科要求</th><th>风险</th><th>推荐就业方向专业</th>
+    </tr>
+    <tr>
+      <td>洛阳理工学院</td><td>物+化组</td><td>洛阳</td><td>505/199,910</td><td>物+化</td><td><span class="badge reach">冲</span></td>
+      <td>电气工程及其自动化（国家级一流本科）、机械设计制造及其自动化、自动化</td>
+    </tr>
+    <tr>
+      <td>河南牧业经济学院</td><td>103组</td><td>郑州</td><td>503/203,899</td><td>物+化</td><td><span class="badge reach">冲</span></td>
+      <td>自动化、数据科学与大数据技术、软件工程、物联网工程、智能制造工程</td>
+    </tr>
+    <tr>
+      <td>湖北经济学院</td><td>—</td><td>武汉</td><td>500/209,695</td><td>物+不限（待核验）</td><td><span class="badge stable">稳</span></td>
+      <td>会计学（国家级特色）、金融学（国家级特色）、市场营销（国家级特色）、财政学、审计学</td>
+    </tr>
+    <tr>
+      <td>河南工程学院</td><td>物+化组</td><td>郑州</td><td>499/211,621</td><td>物+化</td><td><span class="badge stable">稳</span></td>
+      <td>安全工程（全国#1）、工业工程（全国#1）、电气工程及其自动化、机械设计制造及其自动化、软件工程</td>
+    </tr>
+    <tr>
+      <td>河南城建学院</td><td>103组</td><td>平顶山</td><td>497/215,411</td><td>物+化（待核验）</td><td><span class="badge stable">稳</span></td>
+      <td>土木工程、工程管理、城乡规划、建筑学</td>
+    </tr>
+    <tr>
+      <td>河南牧业经济学院</td><td>104组</td><td>郑州</td><td>496/217,439</td><td>物+不限（待核验）</td><td><span class="badge stable">稳</span></td>
+      <td>会计学（校友会A，全国#63）、财务管理（校友会A，全国#40）</td>
+    </tr>
+    <tr>
+      <td>河南牧业经济学院</td><td>105组</td><td>郑州</td><td>495/219,377</td><td>物+不限（待核验）</td><td><span class="badge stable">稳</span></td>
+      <td>金融学（校友会B++）、电子商务（校友会B+）</td>
+    </tr>
+    <tr>
+      <td>河南牧业经济学院</td><td>102组</td><td>郑州</td><td>494/221,305</td><td>物+不限</td><td><span class="badge stable">稳</span></td>
+      <td>物流管理（校友会A，全国#27）、电子商务、大数据管理与应用</td>
+    </tr>
+    <tr>
+      <td>平顶山学院</td><td>110组（软件类）</td><td>平顶山</td><td>494/221,305</td><td>物+不限（待核验）</td><td><span class="badge stable">稳</span></td>
+      <td>软件工程（需核验学费标准，软件类专业通常学费较高）</td>
+    </tr>
+    <tr>
+      <td>河南财政金融学院</td><td>物+不限组</td><td>郑州</td><td>493/223,265</td><td>物+不限</td><td><span class="badge stable">稳</span></td>
+      <td>会计学、金融学、财务管理、财政学（考公优势）、保险学</td>
+    </tr>
+    <tr>
+      <td>河南牧业经济学院</td><td>108组</td><td>郑州</td><td>490/229,094</td><td>物+不限（待核验）</td><td><span class="badge safety">保</span></td>
+      <td>待核验具体专业（同校商科/工科类专业）</td>
+    </tr>
+    <tr>
+      <td>中原工学院</td><td>501组</td><td>郑州</td><td>490/229,094</td><td>待核验</td><td><span class="badge safety">保</span></td>
+      <td>计算机类、纺织工程（需核验501组是否为联办/软件类等特殊项目）</td>
+    </tr>
+    <tr>
+      <td>新乡学院</td><td>102组</td><td>新乡</td><td>490/229,094</td><td>待核验</td><td><span class="badge safety">保</span></td>
+      <td>待核验具体专业</td>
+    </tr>
+    <tr>
+      <td>南阳理工学院</td><td>501组</td><td>南阳</td><td>489/231,000</td><td>待核验</td><td><span class="badge safety">保</span></td>
+      <td>计算机类、机械类、电子信息类</td>
+    </tr>
+  </table>
+
+  <div class="warning-box">
+    <p><strong>数据说明：</strong>2025年为河南新高考首年，"专业组"为新增概念。表中"选科要求（待核验）"表示该组具体选科要求需以2026年河南省教育考试院发布的官方招生计划为准。各专业组内包含的具体专业列表需在志愿填报系统中核实。</p>
+  </div>
+</div>
+
+<!-- ==================== Section 5: 方案A ==================== -->
+<div class="section" id="s5">
+  <h2>五、方案A：稳妥保守型</h2>
+  <p><strong>策略</strong>：郑州公办优先，最大限度降低滑档风险，商科与工科并重，提高录取概率和专业可接受度。</p>
+
+  <div class="ratio-bar">
+    <div class="reach-bar" style="width:10%"><span>冲1</span></div>
+    <div class="stable-bar" style="width:60%"><span>稳6</span></div>
+    <div class="safety-bar" style="width:30%"><span>保3</span></div>
+  </div>
+  <p style="font-size:0.85rem;color:var(--text-light);">冲稳保比例：1:6:3（共10个志愿，实际填报可扩展至48个）</p>
+
+  <div class="plan-card reach">
+    <div class="card-header">
+      <span class="school-name">志愿1：河南牧业经济学院 103组</span>
+      <span class="badge reach">冲</span>
+    </div>
+    <div class="card-body">
+      <p><span class="label">城市/性质</span>郑州 / <span class="badge public">公办</span></p>
+      <p><span class="label">2025位次</span>503分 / 203,899（仅高于考生406位，边界冲）</p>
+      <p><span class="label">选科要求</span>物+化（考生符合）</p>
+      <p><span class="label">推荐专业</span>自动化、数据科学与大数据技术、软件工程、物联网工程</p>
+      <p><span class="label">推荐理由</span>郑州公办，工科专业组就业前景较好（自动化/数据科学为近年热门），103组为该校物+化组，考生选科匹配。</p>
+      <p><span class="label">调剂风险</span>组内含自动化、智能制造、能源与动力等多个工科专业，调剂方向均在工科范围内，可接受度较高。</p>
+      <p><span class="label">限制提示</span>需核实103组2026年是否保留相同专业设置。</p>
+      <p><span class="label">放置原因</span>唯一的郑州公办"冲"选项，放在首位争取更好录取结果，即使未录取也不影响后续志愿。</p>
+    </div>
+  </div>
+
+  <div class="plan-card stable">
+    <div class="card-header">
+      <span class="school-name">志愿2：河南工程学院 物+化组</span>
+      <span class="badge stable">稳</span>
+    </div>
+    <div class="card-body">
+      <p><span class="label">城市/性质</span>郑州 / <span class="badge public">公办</span></p>
+      <p><span class="label">2025位次</span>499分 / 211,621（低于考生7,316位，较稳）</p>
+      <p><span class="label">选科要求</span>物+化（考生符合）</p>
+      <p><span class="label">推荐专业</span>电气工程及其自动化、安全工程（全国#1）、机械设计制造及其自动化、软件工程</p>
+      <p><span class="label">推荐理由</span>郑州公办，安全工程和工业工程全国排名第一，电气工程为省级特色专业，工科就业面广。</p>
+      <p><span class="label">调剂风险</span>组内含纺织工程（全国#3）等较冷门专业，服从调剂可能被分配到纺织类，需评估是否可接受。</p>
+      <p><span class="label">放置原因</span>首个"稳"志愿，郑州公办+工科就业导向，与考生需求高度匹配。</p>
+    </div>
+  </div>
+
+  <div class="plan-card stable">
+    <div class="card-header">
+      <span class="school-name">志愿3：河南牧业经济学院 104组</span>
+      <span class="badge stable">稳</span>
+    </div>
+    <div class="card-body">
+      <p><span class="label">城市/性质</span>郑州 / <span class="badge public">公办</span></p>
+      <p><span class="label">2025位次</span>496分 / 217,439（低于考生13,134位，稳）</p>
+      <p><span class="label">选科要求</span>物+不限（待核验，考生符合）</p>
+      <p><span class="label">推荐专业</span>会计学（校友会A，全国#63）、财务管理（校友会A，全国#40）</p>
+      <p><span class="label">推荐理由</span>郑州公办，会计学和财务管理为该校王牌专业，就业方向明确（企业财务/银行/考公）。</p>
+      <p><span class="label">调剂风险</span>组内具体专业待核验，需在填报系统中确认。</p>
+      <p><span class="label">放置原因</span>商科"稳"志愿，与志愿2的工科形成互补，满足就业导向的多元选择。</p>
+    </div>
+  </div>
+
+  <div class="plan-card stable">
+    <div class="card-header">
+      <span class="school-name">志愿4：河南牧业经济学院 102组</span>
+      <span class="badge stable">稳</span>
+    </div>
+    <div class="card-body">
+      <p><span class="label">城市/性质</span>郑州 / <span class="badge public">公办</span></p>
+      <p><span class="label">2025位次</span>494分 / 221,305（低于考生17,000位，较稳）</p>
+      <p><span class="label">选科要求</span>物+不限（考生符合）</p>
+      <p><span class="label">推荐专业</span>物流管理（校友会A，全国#27）、电子商务、大数据管理与应用</p>
+      <p><span class="label">推荐理由</span>郑州公办，物流管理全国排名前列，电商和大数据管理就业面广。</p>
+      <p><span class="label">调剂风险</span>组内专业均为商科/管理类，调剂风险可控。</p>
+      <p><span class="label">放置原因</span>同校不同专业组，进一步扩大录取概率，物流管理为该校优势专业。</p>
+    </div>
+  </div>
+
+  <div class="plan-card stable">
+    <div class="card-header">
+      <span class="school-name">志愿5：河南财政金融学院 物+不限组</span>
+      <span class="badge stable">稳</span>
+    </div>
+    <div class="card-body">
+      <p><span class="label">城市/性质</span>郑州 / <span class="badge public">公办</span></p>
+      <p><span class="label">2025位次</span>493分 / 223,265（低于考生18,960位，稳/保边界）</p>
+      <p><span class="label">选科要求</span>物+不限（考生符合）</p>
+      <p><span class="label">推荐专业</span>会计学、财政学（考公方向优势）、金融学、财务管理</p>
+      <p><span class="label">推荐理由</span>郑州公办，财政学对口税务/财政系统公务员岗位，会计学和金融学就业面广。该校前身为河南财政税务高等专科学校，财经底蕴深厚。</p>
+      <p><span class="label">调剂风险</span>组内专业均为财经类，调剂方向可接受度高。</p>
+      <p><span class="label">放置原因</span>郑州公办+财经就业导向，作为稳的最后一档衔接保底。</p>
+    </div>
+  </div>
+
+  <div class="plan-card stable">
+    <div class="card-header">
+      <span class="school-name">志愿6：平顶山学院 110组（软件类）</span>
+      <span class="badge stable">稳</span>
+    </div>
+    <div class="card-body">
+      <p><span class="label">城市/性质</span>平顶山 / <span class="badge public">公办</span></p>
+      <p><span class="label">2025位次</span>494分 / 221,305（低于考生17,000位，稳）</p>
+      <p><span class="label">选科要求</span>物+不限（待核验，考生符合）</p>
+      <p><span class="label">推荐专业</span>软件工程</p>
+      <p><span class="label">推荐理由</span>公办软件类专业，软件工程就业市场需求稳定（麦可思2025年就业蓝皮书仍为绿牌专业）。</p>
+      <p><span class="label">限制提示</span>⚠️ 软件类专业学费通常高于普通公办专业（约12,000-15,000元/年），需核实是否在考生预算范围内。若学费不可接受，可替换为其他志愿。</p>
+      <p><span class="label">放置原因</span>非郑州但仍在河南省内，作为软件工程方向的补充选择。</p>
+    </div>
+  </div>
+
+  <div class="plan-card safety">
+    <div class="card-header">
+      <span class="school-name">志愿7：河南牧业经济学院 108组</span>
+      <span class="badge safety">保</span>
+    </div>
+    <div class="card-body">
+      <p><span class="label">城市/性质</span>郑州 / <span class="badge public">公办</span></p>
+      <p><span class="label">2025位次</span>490分 / 229,094（低于考生24,789位，保底）</p>
+      <p><span class="label">选科要求</span>物+不限（待核验，考生符合）</p>
+      <p><span class="label">推荐专业</span>待核验具体专业（同校商科/管理类专业为主）</p>
+      <p><span class="label">推荐理由</span>同校最低位次组，作为本校保底。郑州公办，即使调剂也在校内商科/管理类专业范围内。</p>
+      <p><span class="label">放置原因</span>同校多组填报策略，提高至少有一个组能录取的概率。</p>
+    </div>
+  </div>
+
+  <div class="plan-card safety">
+    <div class="card-header">
+      <span class="school-name">志愿8：中原工学院 501组</span>
+      <span class="badge safety">保</span>
+    </div>
+    <div class="card-body">
+      <p><span class="label">城市/性质</span>郑州 / <span class="badge public">公办</span></p>
+      <p><span class="label">2025位次</span>490分 / 229,094（低于考生24,789位，保底）</p>
+      <p><span class="label">选科要求</span>待核验</p>
+      <p><span class="label">推荐专业</span>计算机类、纺织工程</p>
+      <p><span class="label">推荐理由</span>郑州公办，以纺织/计算机为特色。501组位次较低，可能为联办项目或特殊类组。</p>
+      <p><span class="label">限制提示</span>⚠️ 需核实501组是否为联办/较高收费/异地校区项目。若为特殊项目，需确认毕业证是否有差异、学费是否在预算内。</p>
+      <p><span class="label">放置原因</span>郑州公办保底选项，增加录取安全网。</p>
+    </div>
+  </div>
+
+  <div class="plan-card safety">
+    <div class="card-header">
+      <span class="school-name">志愿9：南阳理工学院 501组</span>
+      <span class="badge safety">保</span>
+    </div>
+    <div class="card-body">
+      <p><span class="label">城市/性质</span>南阳 / <span class="badge public">公办</span></p>
+      <p><span class="label">2025位次</span>489分 / 231,000（低于考生26,695位，保底）</p>
+      <p><span class="label">选科要求</span>待核验</p>
+      <p><span class="label">推荐专业</span>计算机类、机械类、电子信息类</p>
+      <p><span class="label">推荐理由</span>河南公办，工科为主，501组位次最低作为兜底。</p>
+      <p><span class="label">放置原因</strong>末位兜底志愿，最大限度降低滑档风险。</p>
+    </div>
+  </div>
+
+  <p style="margin-top:1rem;font-size:0.9rem;"><strong>方案A小结</strong>：以郑州公办为主体（9个志愿中8个在郑州），仅在兜底位置安排平顶山和南阳。1冲6稳3保，最大限度降低滑档风险。推荐专业覆盖工科（电气/自动化/软件）和商科（会计/金融/物流）两大就业方向。</p>
+</div>
+
+<!-- ==================== Section 6: 方案B ==================== -->
+<div class="section" id="s6">
+  <h2>六、方案B：均衡型</h2>
+  <p><strong>策略</strong>：兼顾学校层次、专业质量、城市和录取概率，工商结合，地域多元化（郑州+洛阳+武汉）。</p>
+
+  <div class="ratio-bar">
+    <div class="reach-bar" style="width:20%"><span>冲2</span></div>
+    <div class="stable-bar" style="width:50%"><span>稳5</span></div>
+    <div class="safety-bar" style="width:30%"><span>保3</span></div>
+  </div>
+  <p style="font-size:0.85rem;color:var(--text-light);">冲稳保比例：2:5:3</p>
+
+  <div class="plan-card reach">
+    <div class="card-header">
+      <span class="school-name">志愿1：洛阳理工学院 物+化组</span>
+      <span class="badge reach">冲</span>
+    </div>
+    <div class="card-body">
+      <p><span class="label">城市/性质</span>洛阳 / <span class="badge public">公办</span></p>
+      <p><span class="label">2025位次</span>505分 / 199,910（高于考生4,395位，冲）</p>
+      <p><span class="label">选科要求</span>物+化（考生符合）</p>
+      <p><span class="label">推荐专业</span>电气工程及其自动化（国家级一流本科专业）、机械设计制造及其自动化、自动化</p>
+      <p><span class="label">推荐理由</strong>洛阳公办，电气工程及其自动化为麦可思2025年就业绿牌专业（就业率93.2%）。2024年该校河南本二录取位次203,994，与考生204,305几乎完全吻合，有较合理的冲刺价值。</p>
+      <p><span class="label">调剂风险</span>组内含无机非金属材料工程等较冷门专业，调剂可能分配到材料类，需评估是否可接受。</p>
+      <p><span class="label">放置原因</strong>均衡型方案首冲志愿，洛阳为考生第二优先城市，电气工程就业前景有数据支撑。</p>
+    </div>
+  </div>
+
+  <div class="plan-card reach">
+    <div class="card-header">
+      <span class="school-name">志愿2：河南牧业经济学院 103组</span>
+      <span class="badge reach">冲</span>
+    </div>
+    <div class="card-body">
+      <p><span class="label">城市/性质</span>郑州 / <span class="badge public">公办</span></p>
+      <p><span class="label">2025位次</span>503分 / 203,899（高于考生406位，边界冲）</p>
+      <p><span class="label">选科要求</span>物+化（考生符合）</p>
+      <p><span class="label">推荐专业</span>自动化、数据科学与大数据技术、软件工程</p>
+      <p><span class="label">推荐理由</strong>郑州公办，工科专业组，自动化和数据科学为近年就业热门方向。</p>
+      <p><span class="label">放置原因</strong>第二个冲志愿，郑州优先，与志愿1形成"洛阳+郑州"双冲布局。</p>
+    </div>
+  </div>
+
+  <div class="plan-card stable">
+    <div class="card-header">
+      <span class="school-name">志愿3：湖北经济学院</span>
+      <span class="badge stable">稳</span>
+    </div>
+    <div class="card-body">
+      <p><span class="label">城市/性质</span>武汉（外省省会） / <span class="badge public">公办</span></p>
+      <p><span class="label">2025位次</span>500分 / 209,695（低于考生5,390位，稳）</p>
+      <p><span class="label">选科要求</span>物+不限（待核验，考生符合）</p>
+      <p><span class="label">推荐专业</span>会计学（国家级特色专业）、金融学（国家级特色专业）、财政学、审计学</p>
+      <p><span class="label">推荐理由</strong>武汉公办，会计/金融/市场营销三个国家级特色专业，财经类就业面广，考公/银行有优势。武汉距河南较近，属于考生可接受的外省省会。</p>
+      <p><span class="label">调剂风险</span>组内具体专业待核验，需确认是否含非财经类专业。</p>
+      <p><span class="label">放置原因</strong>首个"稳"志愿，外省优质财经院校，提升学校层次多样性。</p>
+    </div>
+  </div>
+
+  <div class="plan-card stable">
+    <div class="card-header">
+      <span class="school-name">志愿4：河南工程学院 物+化组</span>
+      <span class="badge stable">稳</span>
+    </div>
+    <div class="card-body">
+      <p><span class="label">城市/性质</span>郑州 / <span class="badge public">公办</span></p>
+      <p><span class="label">2025位次</span>499分 / 211,621（低于考生7,316位，稳）</p>
+      <p><span class="label">选科要求</span>物+化（考生符合）</p>
+      <p><span class="label">推荐专业</span>电气工程及其自动化、安全工程（全国#1）、机械设计制造及其自动化</p>
+      <p><span class="label">推荐理由</strong>郑州公办，安全工程全国排名第一，工科就业面广。</p>
+      <p><span class="label">调剂风险</span>组内含纺织工程等冷门专业，需评估可接受度。</p>
+      <p><span class="label">放置原因</strong>郑州公办"稳"志愿，与志愿3的武汉财经形成"工+商"均衡布局。</p>
+    </div>
+  </div>
+
+  <div class="plan-card stable">
+    <div class="card-header">
+      <span class="school-name">志愿5：河南城建学院 103组</span>
+      <span class="badge stable">稳</span>
+    </div>
+    <div class="card-body">
+      <p><span class="label">城市/性质</span>平顶山 / <span class="badge public">公办</span></p>
+      <p><span class="label">2025位次</span>497分 / 215,411（低于考生11,106位，稳）</p>
+      <p><span class="label">选科要求</span>物+化（待核验，考生符合）</p>
+      <p><span class="label">推荐专业</span>土木工程、工程管理、城乡规划</p>
+      <p><span class="label">推荐理由</strong>河南公办，城建类特色院校，工程管理就业面较广（施工管理/造价/监理方向）。</p>
+      <p><span class="label">调剂风险</span>组内含建筑学、城乡规划等专业，需确认学制差异（建筑学通常5年）。</p>
+      <p><span class="label">放置原因</strong>补充城建类方向，丰富专业多样性。</p>
+    </div>
+  </div>
+
+  <div class="plan-card stable">
+    <div class="card-header">
+      <span class="school-name">志愿6：河南牧业经济学院 104组</span>
+      <span class="badge stable">稳</span>
+    </div>
+    <div class="card-body">
+      <p><span class="label">城市/性质</span>郑州 / <span class="badge public">公办</span></p>
+      <p><span class="label">2025位次</span>496分 / 217,439（低于考生13,134位，稳）</p>
+      <p><span class="label">选科要求</span>物+不限（待核验，考生符合）</p>
+      <p><span class="label">推荐专业</span>会计学、财务管理</p>
+      <p><span class="label">推荐理由</strong>郑州公办，会计学和财务管理为校友会A类评级专业。</p>
+      <p><span class="label">放置原因</strong>回到郑州公办商科，衔接后续保底。</p>
+    </div>
+  </div>
+
+  <div class="plan-card stable">
+    <div class="card-header">
+      <span class="school-name">志愿7：河南财政金融学院 物+不限组</span>
+      <span class="badge stable">稳</span>
+    </div>
+    <div class="card-body">
+      <p><span class="label">城市/性质</span>郑州 / <span class="badge public">公办</span></p>
+      <p><span class="label">2025位次</span>493分 / 223,265（低于考生18,960位，稳/保边界）</p>
+      <p><span class="label">选科要求</span>物+不限（考生符合）</p>
+      <p><span class="label">推荐专业</span>会计学、财政学（考公优势）、金融学</p>
+      <p><span class="label">推荐理由</strong>郑州公办，财政学对口公务员税务/财政岗位，财经就业面广。</p>
+      <p><span class="label">放置原因</strong>最后一个"稳"志愿，衔接保底。</p>
+    </div>
+  </div>
+
+  <div class="plan-card safety">
+    <div class="card-header">
+      <span class="school-name">志愿8：河南牧业经济学院 108组</span>
+      <span class="badge safety">保</span>
+    </div>
+    <div class="card-body">
+      <p><span class="label">城市/性质</span>郑州 / <span class="badge public">公办</span></p>
+      <p><span class="label">2025位次</span>490分 / 229,094（低于考生24,789位，保底）</p>
+      <p><span class="label">推荐理由</strong>同校最低位次组保底，郑州公办。</p>
+    </div>
+  </div>
+
+  <div class="plan-card safety">
+    <div class="card-header">
+      <span class="school-name">志愿9：中原工学院 501组</span>
+      <span class="badge safety">保</span>
+    </div>
+    <div class="card-body">
+      <p><span class="label">城市/性质</span>郑州 / <span class="badge public">公办</span></p>
+      <p><span class="label">2025位次</span>490分 / 229,094（低于考生24,789位，保底）</p>
+      <p><span class="label">限制提示</span>⚠️ 需核实501组是否为特殊项目（联办/较高收费）。</p>
+      <p><span class="label">推荐理由</strong>郑州公办保底选项。</p>
+    </div>
+  </div>
+
+  <div class="plan-card safety">
+    <div class="card-header">
+      <span class="school-name">志愿10：南阳理工学院 501组</span>
+      <span class="badge safety">保</span>
+    </div>
+    <div class="card-body">
+      <p><span class="label">城市/性质</span>南阳 / <span class="badge public">公办</span></p>
+      <p><span class="label">2025位次</span>489分 / 231,000（低于考生26,695位，保底）</p>
+      <p><span class="label">推荐理由</strong>末位兜底，最大限度降低滑档风险。</p>
+    </div>
+  </div>
+
+  <p style="margin-top:1rem;font-size:0.9rem;"><strong>方案B小结</strong>：2冲5稳3保，地域多元（郑州6+洛阳1+武汉1+平顶山1+南阳1）。工商结合（工科4+商科4+城建1+保底1），在录取概率和学校/专业质量之间取得平衡。引入武汉湖北经济学院提升学校层次多样性。</p>
+</div>
+
+<!-- ==================== Section 7: 方案C ==================== -->
+<div class="section" id="s7">
+  <h2>七、方案C：冲刺型</h2>
+  <p><strong>策略</strong>：在合理保底前提下，优先冲更高层次学校或就业优势专业，突出国家级特色专业和绿牌专业。</p>
+
+  <div class="ratio-bar">
+    <div class="reach-bar" style="width:20%"><span>冲2</span></div>
+    <div class="stable-bar" style="width:40%"><span>稳4</span></div>
+    <div class="safety-bar" style="width:40%"><span>保4</span></div>
+  </div>
+  <p style="font-size:0.85rem;color:var(--text-light);">冲稳保比例：2:4:4（冲的数量受限于公办非中外合作可选范围，增加保底数量以对冲风险）</p>
+
+  <div class="plan-card reach">
+    <div class="card-header">
+      <span class="school-name">志愿1：洛阳理工学院 物+化组</span>
+      <span class="badge reach">冲</span>
+    </div>
+    <div class="card-body">
+      <p><span class="label">城市/性质</span>洛阳 / <span class="badge public">公办</span></p>
+      <p><span class="label">2025位次</span>505分 / 199,910（高于考生4,395位，冲）</p>
+      <p><span class="label">选科要求</span>物+化（考生符合）</p>
+      <p><span class="label">推荐专业</span>电气工程及其自动化（国家级一流本科专业，麦可思2025就业绿牌，就业率约93.2%）</p>
+      <p><span class="label">推荐理由</strong>洛阳公办，电气工程及其自动化为国家级一流本科专业且为就业绿牌专业。2024年该校本二录取位次203,994，与考生位次几乎完全吻合，冲刺价值高。</p>
+      <p><span class="label">调剂风险</span>组内含无机非金属材料工程等冷门专业，若服从调剂可能被分配到材料类。建议：若电气工程无法录取且不愿接受材料类，可不服从调剂（但有一轮投档退档风险）。</p>
+      <p><span class="label">放置原因</strong>冲刺型方案首冲志愿，目标明确——电气工程绿牌专业。</p>
+    </div>
+  </div>
+
+  <div class="plan-card reach">
+    <div class="card-header">
+      <span class="school-name">志愿2：河南牧业经济学院 103组</span>
+      <span class="badge reach">冲</span>
+    </div>
+    <div class="card-body">
+      <p><span class="label">城市/性质</span>郑州 / <span class="badge public">公办</span></p>
+      <p><span class="label">2025位次</span>503分 / 203,899（高于考生406位，边界冲）</p>
+      <p><span class="label">选科要求</span>物+化（考生符合）</p>
+      <p><span class="label">推荐专业</span>自动化、软件工程、数据科学与大数据技术</p>
+      <p><span class="label">推荐理由</strong>郑州公办，自动化和软件工程为近年就业热门方向。103组为物+化工科组，专业设置全部为工科方向。</p>
+      <p><span class="label">放置原因</strong>第二个冲志愿，郑州公办+工科组合。</p>
+    </div>
+  </div>
+
+  <div class="plan-card stable">
+    <div class="card-header">
+      <span class="school-name">志愿3：湖北经济学院</span>
+      <span class="badge stable">稳</span>
+    </div>
+    <div class="card-body">
+      <p><span class="label">城市/性质</span>武汉（外省省会） / <span class="badge public">公办</span></p>
+      <p><span class="label">2025位次</span>500分 / 209,695（低于考生5,390位，稳）</p>
+      <p><span class="label">推荐专业</span>会计学（国家级特色专业）、金融学（国家级特色专业）、审计学</p>
+      <p><span class="label">推荐理由</strong>武汉公办，三个国家级特色专业（会计/金融/市场营销），财经就业面广。审计学方向对口会计师事务所，就业方向明确。</p>
+      <p><span class="label">放置原因</strong>冲刺型方案的"高质量稳"志愿，国家级特色专业提升专业层次。</p>
+    </div>
+  </div>
+
+  <div class="plan-card stable">
+    <div class="card-header">
+      <span class="school-name">志愿4：河南工程学院 物+化组</span>
+      <span class="badge stable">稳</span>
+    </div>
+    <div class="card-body">
+      <p><span class="label">城市/性质</span>郑州 / <span class="badge public">公办</span></p>
+      <p><span class="label">2025位次</span>499分 / 211,621（低于考生7,316位，稳）</p>
+      <p><span class="label">推荐专业</span>安全工程（全国排名#1，国家级一流本科专业）、电气工程及其自动化</p>
+      <p><span class="label">推荐理由</strong>郑州公办，安全工程全国排名第一，为该校最具竞争力的专业。电气工程为就业绿牌方向。</p>
+      <p><span class="label">调剂风险</span>组内含纺织工程（全国#3），调剂可能分配到纺织类。需评估是否可接受。</p>
+      <p><span class="label">放置原因</strong>突出"全国第一"特色专业的冲刺型稳志愿。</p>
+    </div>
+  </div>
+
+  <div class="plan-card stable">
+    <div class="card-header">
+      <span class="school-name">志愿5：河南城建学院 103组</span>
+      <span class="badge stable">稳</span>
+    </div>
+    <div class="card-body">
+      <p><span class="label">城市/性质</span>平顶山 / <span class="badge public">公办</span></p>
+      <p><span class="label">2025位次</span>497分 / 215,411（低于考生11,106位，稳）</p>
+      <p><span class="label">推荐专业</span>工程管理（施工管理/造价方向就业面广）、土木工程</p>
+      <p><span class="label">推荐理由</strong>河南公办，城建特色，工程管理就业方向多样。</p>
+      <p><span class="label">放置原因</strong>补充城建方向，增加专业类型多样性。</p>
+    </div>
+  </div>
+
+  <div class="plan-card stable">
+    <div class="card-header">
+      <span class="school-name">志愿6：河南牧业经济学院 102组</span>
+      <span class="badge stable">稳</span>
+    </div>
+    <div class="card-body">
+      <p><span class="label">城市/性质</span>郑州 / <span class="badge public">公办</span></p>
+      <p><span class="label">2025位次</span>494分 / 221,305（低于考生17,000位，稳）</p>
+      <p><span class="label">推荐专业</span>物流管理（校友会A，全国#27）、大数据管理与应用</p>
+      <p><span class="label">推荐理由</strong>郑州公办，物流管理全国排名前列，大数据管理为近年新兴方向。</p>
+      <p><span class="label">放置原因</strong>突出该校排名最高的物流管理专业。</p>
+    </div>
+  </div>
+
+  <div class="plan-card safety">
+    <div class="card-header">
+      <span class="school-name">志愿7：河南牧业经济学院 108组</span>
+      <span class="badge safety">保</span>
+    </div>
+    <div class="card-body">
+      <p><span class="label">城市/性质</span>郑州 / <span class="badge public">公办</span></p>
+      <p><span class="label">2025位次</span>490分 / 229,094（低于考生24,789位，保底）</p>
+      <p><span class="label">推荐理由</strong>同校保底，郑州公办。</p>
+    </div>
+  </div>
+
+  <div class="plan-card safety">
+    <div class="card-header">
+      <span class="school-name">志愿8：中原工学院 501组</span>
+      <span class="badge safety">保</span>
+    </div>
+    <div class="card-body">
+      <p><span class="label">城市/性质</span>郑州 / <span class="badge public">公办</span></p>
+      <p><span class="label">2025位次</span>490分 / 229,094（低于考生24,789位，保底）</p>
+      <p><span class="label">限制提示</span>⚠️ 需核实501组性质。</p>
+    </div>
+  </div>
+
+  <div class="plan-card safety">
+    <div class="card-header">
+      <span class="school-name">志愿9：新乡学院 102组</span>
+      <span class="badge safety">保</span>
+    </div>
+    <div class="card-body">
+      <p><span class="label">城市/性质</span>新乡 / <span class="badge public">公办</span></p>
+      <p><span class="label">2025位次</span>490分 / 229,094（低于考生24,789位，保底）</p>
+      <p><span class="label">推荐专业</span>待核验具体专业</p>
+      <p><span class="label">推荐理由</strong>河南公办，增加一个不同学校的保底选项，避免全部保底集中在同一所学校。</p>
+    </div>
+  </div>
+
+  <div class="plan-card safety">
+    <div class="card-header">
+      <span class="school-name">志愿10：南阳理工学院 501组</span>
+      <span class="badge safety">保</span>
+    </div>
+    <div class="card-body">
+      <p><span class="label">城市/性质</span>南阳 / <span class="badge public">公办</span></p>
+      <p><span class="label">2025位次</span>489分 / 231,000（低于考生26,695位，保底）</p>
+      <p><span class="label">推荐理由</strong>末位兜底，四个不同学校的保底网络最大限度降低滑档风险。</p>
+    </div>
+  </div>
+
+  <p style="margin-top:1rem;font-size:0.9rem;"><strong>方案C小结</strong>：2冲4稳4保。冲的数量受限于公办非中外合作可选范围（仅2个达标），因此增加保底至4个以对冲冲刺风险。突出各校最具竞争力的专业：洛阳理工电气工程（国家级一流+绿牌）、河南工程学院安全工程（全国#1）、湖北经济学院会计学（国家级特色）、河南牧业经济学院物流管理（全国#27）。4个保底分布在不同学校（郑州2+新乡1+南阳1），避免集中风险。</p>
+</div>
+
+<!-- ==================== Section 8: 风险检查 ==================== -->
+<div class="section" id="s8">
+  <h2>八、退档、滑档与调剂风险检查</h2>
+
+  <div class="check-item">
+    <span class="icon">✅</span>
+    <div class="content">
+      <p><strong>检查项1：选科要求是否匹配</strong></p>
+      <p class="result-pass">结果：通过</p>
+      <p>考生选科为物理+化学+政治。方案中所有推荐专业组均要求"物+不限"或"物+化"，考生均符合。考生不符合的是要求"物+生"或"物+地"的专业组，方案中未包含此类组。</p>
+    </div>
+  </div>
+
+  <div class="check-item">
+    <span class="icon">✅</span>
+    <div class="content">
+      <p><strong>检查项2：体检限制</strong></p>
+      <p class="result-pass">结果：通过</p>
+      <p>考生体检无明显限制，女生165cm。所推荐专业（电气工程、会计学、软件工程、物流管理等）均无性别/身高/视力特殊限制。护理学未在推荐列表中（考生未表达医学意向）。</p>
+    </div>
+  </div>
+
+  <div class="check-item">
+    <span class="icon">⚠️</span>
+    <div class="content">
+      <p><strong>检查项3：单科成绩限制</strong></p>
+      <p class="result-risk">结果：存在风险（待核验）</p>
+      <p>部分高校的部分专业可能设置数学/英语/语文单科成绩最低要求，需在填报前逐个核对目标高校2026年招生章程。例如：湖北经济学院部分专业可能要求英语单科成绩。建议查阅各校招生章程中的"单科成绩要求"条款。</p>
+    </div>
+  </div>
+
+  <div class="check-item">
+    <span class="icon">✅</span>
+    <div class="content">
+      <p><strong>检查项4：外语语种限制</strong></p>
+      <p class="result-pass">结果：通过</p>
+      <p>考生外语为英语，所有推荐院校均以英语为主要外语教学语种，无不匹配情况。但需注意：中外合作专业可能要求英语单科成绩，方案中已排除中外合作专业组。</p>
+    </div>
+  </div>
+
+  <div class="check-item">
+    <span class="icon">⚠️</span>
+    <div class="content">
+      <p><strong>检查项5：高收费专业风险</strong></p>
+      <p class="result-risk">结果：存在风险</p>
+      <p>方案A中"平顶山学院110组（软件类）"可能为较高学费专业（通常12,000-15,000元/年，高于普通公办约5,000元/年）。中原工学院501组也可能为联办/较高收费项目。考生预算为"公办"，需核实学费标准是否可接受。若不可接受，建议用其他普通公办专业组替换。</p>
+    </div>
+  </div>
+
+  <div class="check-item">
+    <span class="icon">⚠️</span>
+    <div class="content">
+      <p><strong>检查项6：不同校区差异</strong></p>
+      <p class="result-risk">结果：存在风险（待核验）</p>
+      <p>部分学校有多个校区（如河南牧业经济学院有龙子湖和英才校区，河南工程学院有桐柏和南区校区），不同专业可能分布在不同校区，住宿条件、生活便利度可能有差异。需在填报前确认目标专业所在校区。</p>
+    </div>
+  </div>
+
+  <div class="check-item">
+    <span class="icon">⚠️</span>
+    <div class="content">
+      <p><strong>检查项7：专业组内调剂到不可接受专业的风险</strong></p>
+      <p class="result-risk">结果：存在风险</p>
+      <p>河南工程学院物+化组内含纺织工程（全国#3但就业面较窄），若服从调剂可能被分配到纺织类。洛阳理工学院物+化组内含无机非金属材料工程。建议：若对调剂方向不可接受，可考虑不服从调剂（但需承担一轮投档退档风险）。建议在填报系统中核实每个专业组内的完整专业列表后再决定是否服从调剂。</p>
+    </div>
+  </div>
+
+  <div class="check-item">
+    <span class="icon">✅</span>
+    <div class="content">
+      <p><strong>检查项8：滑档风险</strong></p>
+      <p class="result-pass">结果：通过（方案A/B/C均有充足保底）</p>
+      <p>三套方案均安排了3-4个保底志愿（2025年录取位次229,000-231,000），低于考生位次24,000-27,000位，保底厚度充足。建议实际填报时将48个志愿填满，在保底区间补充更多低位次公办院校专业组（如安阳工学院、商丘工学院等），进一步降低滑档风险。</p>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== Section 9: 最终建议 ==================== -->
+<div class="section" id="s9">
+  <h2>九、最终建议</h2>
+
+  <div class="final-rec">
+    <h3>最推荐方案：方案B（均衡型）</h3>
+    <p style="margin:0.5rem 0;font-size:1.05rem;">冲稳保比例 2:5:3 · 工商结合 · 郑州为主+洛阳+武汉</p>
+  </div>
+
+  <h3>推荐理由</h3>
+  <p>方案B在录取概率和学校/专业质量之间取得了最佳平衡。2个冲志愿分别覆盖洛阳（电气工程，国家级一流本科+就业绿牌）和郑州（自动化/数据科学，工科热门），5个稳志愿覆盖武汉（国家级特色财经专业）、郑州（安全工程全国#1、会计学A类、财政学考公方向）和平顶山（工程管理），3个保底提供充足的录取安全保障。地域布局以郑州为主（6/10），兼顾洛阳（1/10）和武汉（1/10），符合考生"郑州＞洛阳＞外省省会"的优先级。工科与商科并重，就业方向多元。</p>
+
+  <p>方案A过于保守（仅1冲），可能浪费考生位次优势。方案C冲的数量受限（仅2个可选），且调剂风险略高。方案B在风险控制和机会争取之间最为均衡，与考生"均衡"风险偏好一致。</p>
+
+  <div class="reminder">
+    <p><strong>重要提醒（填报前必须核对）</strong></p>
+    <ul>
+      <li>河南省教育考试院公布的2026年最新招生计划（专业组设置、招生人数可能有变化）</li>
+      <li>目标高校2026年招生章程中的选科要求、体检要求、单科成绩要求</li>
+      <li>每个院校专业组内包含的完整专业列表（在志愿填报系统中查看）</li>
+      <li>中原工学院501组、平顶山学院110组的组别性质和学费标准</li>
+      <li>各校不同校区的分布情况</li>
+      <li>志愿填报系统中的实时信息</li>
+    </ul>
+    <p style="margin-top:0.5rem;">本方案基于2025年历史数据和当前已知信息，实际录取结果受招生计划变化、报考人数波动、政策调整等多种因素影响，不承诺录取结果。所有"待核验"标注的项目请务必在填报前核实。</p>
+  </div>
+
+  <div class="info-box" style="margin-top:1rem;">
+    <ul>
+      <li>就业数据来源：麦可思研究院2025年中国大学生就业报告（就业绿牌/红牌专业）</li>
+      <li>专业排名来源：校友会2025中国大学一流专业排名</li>
+      <li>录取数据来源：hfplg.com、gk100.com（2025年河南物理类投档数据）</li>
+      <li>政策数据来源：大河网、央广网（2026年河南高考分数线）、gk100.com（志愿填报规则）</li>
+    </ul>
+  </div>
+</div>
+
+</div>
+
+<div class="footer">
+  <p>河南2026高考志愿填报方案 · 494分/物理方向/位次204,305</p>
+  <p>生成日期：2026-06-26 · 基于2025年河南新高考首年录取数据 · 仅供参考</p>
+  <p><a href="index.html">← 返回419分方案</a> · <a href="https://github.com/Polors/HenanGaoKao">GitHub仓库</a></p>
+</div>
+
+</body>
+</html>
